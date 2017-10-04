@@ -4,7 +4,7 @@ tripledes ecb,cbc
 fnEncrypt
 encrypts message with tripledes ecb or cbc encryption
 
-fnEncrypt($func,$input_message,$secret_key)
+<b>fnEncrypt($func,$input_message,$secret_key)</b>
 $func="ecb" or "cbc"
 $input_message=secret you want to hide
 $secret_key=string you use for encryption as a key
