@@ -48,11 +48,7 @@ $message="Secret message. Do not share";
 $secretKey="ThisIsASecretKey12345678";
 //$secretKey="12345678";
 $cipher=fnEncrypt("cbc",$message,$secretKey);
-fnSaveToDb($cipher[0],$cipher[1],$conn);
-echo("<br>");
 $finall=fnDecrypt("cbc",$cipher[0],$secretKey,$cipher[1]);
-echo($finall);
-fnSelectFromDb(1,$conn);
 
 
 
