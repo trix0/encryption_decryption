@@ -1,29 +1,29 @@
 # encryption_decryption
 tripledes ecb,cbc
 
-fnEncrypt
+<b>fnEncrypt
 encrypts message with tripledes ecb or cbc encryption
+<b></b>
+fnEncrypt($func,$input_message,$secret_key)
+<b>$func</b>="ecb" or "cbc"
+<b>$input_message</b>=secret you want to hide
+<b>$secret_key</b>=string you use for encryption as a key
 
-<b>fnEncrypt($func,$input_message,$secret_key)</b>
-$func="ecb" or "cbc"
-$input_message=secret you want to hide
-$secret_key=string you use for encryption as a key
-
-ecb returns
+<b>ecb returns</b>
 array-> first index = encrypted string
 
-cbc returns
+<b>cbc returns</b>
 array-> first index= encrypted string, second index= initialization vector
 
-fnDencrypt
+<b>fnDencrypt</b>
 function fnDecrypt($func,$input_message,$secret_key,$iv="base")
 
-$func="ecb" or "cbc"
-$input_message=encrypted string you want to decrypt
-$secret_key=string you use for encryption as a key
-$iv=if you use cbc decryption initialization vector is needed
+<b>$func</b>="ecb" or "cbc"
+<b>$input_message</b>=encrypted string you want to decrypt
+<b>$secret_key</b>=string you use for encryption as a key
+<b>$iv</b>=if you use cbc decryption initialization vector is needed
 
-ecb,cbc returns 
+<b>ecb,cbc returns </b>
 
 decrypted string/original string
 
